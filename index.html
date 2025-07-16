@@ -21,6 +21,7 @@
       <div class="mb-3">
         <label class="form-label">Nombre del Responsable</label>
         <input type="text" class="form-control" name="responsable" required>
+        <div class="invalid-feedback">Este campo es obligatorio.</div>
       </div>
 
       <div class="mb-3">
@@ -42,6 +43,14 @@
         <label class="form-label">Cantidad de Alumnos</label>
         <input type="number" class="form-control" name="cantidad" min="1" step="1" required>
       </div>
+      <div class="mb-3">
+        <label class="form-label">Edad del Alumno</label>
+        <input type="number" class="form-control" name="edad" id="edad" required min="10" max="99">
+      </div>
+      
+      <div id="mensajeError" class="alert alert-danger d-none">Debés tener al menos 16 años para inscribirte.</div>
+      <div id="mensajeExito" class="alert alert-success d-none">¡Inscripción enviada correctamente!</div>
+      
       
       <div class="mb-3">
         <label class="form-label">Horario Disponible</label>
@@ -63,10 +72,13 @@
         </label>
       </div>
 
-      <button type="submit" class="btn btn-primary">Enviar inscripción</button>
+      <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar inscripción</button>
     </form>
   
   </div>
+  <script src="./js/validar.js"></script>
+
 </body>
+
 </html>
 
