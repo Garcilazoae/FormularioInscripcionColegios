@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $edad = $_POST["edad"];
 
     if ($edad < 16) {
-        echo "menor";
+        echo "menor"; // Devuelve "menor" si la edad no cumple el requisito
         exit;
     }
 
@@ -31,3 +31,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->close();
     $conn->close();
 }
+
+?>
