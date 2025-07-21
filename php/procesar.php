@@ -7,7 +7,9 @@ error_reporting(E_ALL);//mostrara cualquier error relacionado con la base de dat
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     include("conexion.php");
-    
+    echo "comenzando"; // Devuelve "menor" si la edad no cumple el requisito
+    echo "un eco"; // Devuelve "menor" si la edad no cumple el requisito
+
     $responsable = $_POST["responsable"];
     $colegio = $_POST["colegio"];
     $curso = $_POST["curso"];
