@@ -6,7 +6,6 @@ error_reporting(E_ALL);//mostrara cualquier error relacionado con la base de dat
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    asdasdasdasdasd
     include("conexion.php");
     
     $responsable = $_POST["responsable"];
