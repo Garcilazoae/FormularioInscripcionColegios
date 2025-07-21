@@ -4,7 +4,7 @@ $usuario = "root";
 $contrasena = ""; // sin contraseña por defecto en XAMPP
 $base = "educacion_vial";
 
-$conn = new mysqli($host, $usuario, $contrasena, $bd);
+$conn = new mysqli($host, $usuario, $contrasena, $base);
 
 // Verificamos la conexión
 if ($conn->connect_error) {

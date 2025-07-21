@@ -1,5 +1,12 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);//mostrara cualquier error relacionado con la base de datos, consulta s
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include("conexion.php");
+    
     $responsable = $_POST["responsable"];
     $colegio = $_POST["colegio"];
     $curso = $_POST["curso"];

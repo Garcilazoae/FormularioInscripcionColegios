@@ -21,17 +21,17 @@
 
       <div class="mb-3">
         <label class="form-label">Nombre del Responsable</label>
-        <input type="text" class="form-control" name="responsable" required disabled>
+        <input type="text" class="form-control" name="responsable" required>
       </div>
 
       <div class="mb-3">
         <label class="form-label">Nombre del Colegio</label>
-        <input type="text" class="form-control" name="colegio" required disabled>
+        <input type="text" class="form-control" name="colegio" required>
       </div>
 
       <div class="mb-3">
         <label class="form-label">Curso</label>
-        <select class="form-select" name="curso" required disabled>
+        <select class="form-select" name="curso" required>
           <option value="">Seleccionar curso</option>
           <option value="5°">5°</option>
           <option value="6°">6°</option>
@@ -40,11 +40,11 @@
 
       <div class="mb-3">
         <label class="form-label">Cantidad de Alumnos</label>
-        <input type="number" class="form-control" name="cantidad" min="1" step="1" required disabled>
+        <input type="number" class="form-control" name="cantidad" min="1" step="1" required>
       </div>
       <div class="mb-3">
         <label class="form-label">Edad del Alumno (Verificada)</label>
-        <input type="number" class="form-control" name="edad" id="edad" required min="10" max="99" disabled>
+        <input type="number" class="form-control" name="edad" id="edad" required min="10" max="99">
       </div>
       
       <div id="mensajeError" class="alert alert-danger d-none">Este campo es obligatorio.</div>
@@ -74,7 +74,11 @@
     </form>
   
   </div>
-  <script src="./src/js/pepe.js"></script>
+  <script src= "src/js/pepe.js"></script>
+  <script>
+    console.log("✅ Este script sí carga");
+  </script>
+  
 
 </body>
 

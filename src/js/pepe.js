@@ -1,3 +1,5 @@
+console.log("pepe.js cargado correctamente");
+//para asegurarn que cargue el pepe.js
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("formulario");
     const edadInputInicial = document.getElementById("edad-alumno-inicial"); // Correcto ID
@@ -58,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
             .then((res) => res.text())
             .then((data) => {
+                console.log("Respuesta del servidor:", data);
+
                 if (data === "ok") {
                     mensajeErrorEnvio.classList.add("d-none"); 
                     mensajeExito.classList.remove("d-none");
